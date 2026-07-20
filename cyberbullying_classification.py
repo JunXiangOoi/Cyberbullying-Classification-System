@@ -106,6 +106,12 @@ if st.button("Classify"):
             # Prediction
             prediction = model.predict([cleaned_text])
 
+            if prediction == "other_cyberbullying":
+                prediction = "other cyberbullying"
+            
+            elif prediction == "not_cyberbullying":
+                prediction = "not cyberbullying"
+
 
             # Display result
             st.success("Classification Result:")
