@@ -117,7 +117,7 @@ if st.button("Classify"):
             st.success("Classification Result:")
 
             st.write(
-                f"**Cyberbullying Type: {prediction[0]}**"
+                f"**Cyberbullying Type: {prediction}**"
             )
 
 
