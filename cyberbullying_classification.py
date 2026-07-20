@@ -113,7 +113,7 @@ if st.button("Classify"):
                 prediction = "not cyberbullying"
 
             else:
-                prediction = prediction
+                prediction = prediction[0]
 
             # Display result
             st.success("Classification Result:")
